@@ -43,8 +43,8 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
     { path: '/skills', icon: Code2, label: 'Skills' },
     { path: '/projects', icon: FolderGit2, label: 'Projects' },
     { path: '/research', icon: BookOpen, label: 'Research Work' },
-    { path: '/internship', icon: Briefcase, label: 'Internship' },
-    { path: '/research_interest', icon: Settings, label: 'Research Interest & Expertise' },
+    { path: '/experience', icon: Briefcase, label: 'Experience' },
+    // { path: '/research_interest', icon: Settings, label: 'Research Interest & Expertise' },
     { path: '/education', icon: GraduationCap, label: 'Education' },
     { path: '/contact', icon: Mail, label: 'Contact' },
     { path: '/resume', icon: FileText, label: 'Resume' },
@@ -63,8 +63,8 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
       <div className="h-full flex flex-col">
         {/* Profile Section */}
         <div className="p-6 text-center border-b border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800">Tasnimul Hoque Rafi</h2>
-          <p className="text-purple-600 font-medium">Electrical Engineer</p>
+          <h2 className="text-2xl font-bold text-gray-800">Md. Parvej Hoque Palash</h2>
+          <p className="text-purple-600 font-medium">Software Engineer</p>
         </div>
 
         {/* Navigation */}

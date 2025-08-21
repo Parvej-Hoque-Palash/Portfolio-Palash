@@ -13,16 +13,15 @@ import {
 } from 'lucide-react';
 
 const characteristics = [
-  { icon: Users, title: 'Robotics and Automation', color: 'bg-yellow-500' },
-  { icon: Computer, title: 'Computer Vision', color: 'bg-blue-500' },
-  { icon: Brain, title: 'Human Machine Interaction', color: 'bg-green-500' },
-  { icon: Car, title: 'Autonomous Driving', color: 'bg-red-500' },
+  { icon: Users, title: 'Programming', color: 'bg-yellow-500' },
+  { icon: Computer, title: 'Web Development', color: 'bg-blue-500' },
+  { icon: Brain, title: 'System Design', color: 'bg-green-500' },
+  { icon: Rocket, title: 'Frontend Development', color: 'bg-teal-500' },
+  { icon: Car, title: 'Backend Development', color: 'bg-red-500' },
   { icon: BrainCircuit, title: 'Machine Learning', color: 'bg-indigo-500' },
   { icon: BrainCog, title: 'Deep Learning', color: 'bg-pink-500' },
-  { icon: Rocket, title: 'Autonomous Drones', color: 'bg-teal-500' },
-  { icon: Radio, title: 'Wireless Communications', color: 'bg-orange-500' },
+  { icon: Radio, title: 'Business Intelligence', color: 'bg-orange-500' },
 ];
-
 const Home = () => {
   return (
     <div className="min-h-[calc(100vh-theme(space.16))] flex flex-col items-center justify-center mb-4">

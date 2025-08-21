@@ -1,46 +1,32 @@
 import { motion } from 'framer-motion';
-import { FileText, Youtube } from 'lucide-react';
-import feature1 from '../images/feature1.webp'
-import feature2 from '../images/feature2.webp'
-import feature3 from '../images/feature3.webp'
-import feature4 from '../images/feature4.webp'
-import feature5 from '../images/feature5.webp'
-import feature6 from '../images/feature6.webp'
-
-
-
+import { FileText } from 'lucide-react';
+// import feature1 from '../images/feature1.webp'
 
 const researchWorks = [
-  {
-    title: 'Virtual Zone Based Traffic Monitoring and Driver Assistance',
-    supervisor: 'Dr. S.M. Mahbubur Rahman, Professor, Department of EEE, BUET',
-    youtubeLink: 'https://www.youtube.com/embed/w7hBFadLm0I?si=fDxh0U6d_l6t5n8Y',
-    githubLink: 'https://github.com/Rafi0198/Virtual-Zone-Based-Autonomous-Traffic-Monitoring',
+    {
+    title: 'A DEEP LEARNING APPROACH FOR PARKINSON’S DISEASE PROGRESSION FORECASTING: LSTM AND TRANSFORMER MODELS ON MRI TIME-SERIES DATA',
+    supervisor: 'Dr. Liton Jude Rozario, Professor, Department of CSE, JU',
+    youtubeLink: '',
+    kaggleLink: 'https://www.kaggle.com/code/parvejhoque/ntua-test-01/edit/run/252909876',
+    githubLink: 'https://github.com/Parvej-Hoque-Palash/DDoS-Attack-Detection-using-ML',
     features: [
       {
-        title: '1. Detection & Classification of Traffic Signs',
-        image: feature1,
-      },
+        title: '1. Classification of Parkinson Disease',
+        // image: feature1,
+      }
+    ],
+  },
+  {
+    title: 'DDoS Attack Detection Using Machine Learning',
+    supervisor: 'Bulbul Ahammad, Assistant Professor, Department of CSE, JU',
+    youtubeLink: '',
+    kaggleLink: '',
+    githubLink: 'https://github.com/Parvej-Hoque-Palash/DDoS-Attack-Detection-using-ML',
+    features: [
       {
-        title: '2. Detection & Classification of Vehicles',
-        image: feature2, 
-      },
-      {
-        title: '3. Recognition of Vehicle\'s Registration Plate',
-        image: feature3,
-      },
-      {
-        title: '4. Speed Estimation and Virtual Zone Based Vehicle Counting with Wrong Side Prompt',
-        image: feature4,
-      },
-      {
-        title: '5. Virtual Zone Based Collision Avoidance Alert',
-        image: feature5,
-      },
-      {
-        title: '6. Drowsiness & Yawn Detection of Driver',
-        image: feature6,
-      },
+        title: '1. Detection & Classification of DDoS Attack',
+        // image: feature1,
+      }
     ],
   },
 ];
@@ -103,11 +89,11 @@ const Research = () => {
                   {work.features.map((feature, idx) => (
                     <div key={idx} className="bg-gray-100 rounded-lg p-4">
                       <h5 className="text-md font-bold text-purple-600 mb-2">{feature.title}</h5>
-                      <img
+                      {/* <img
                         src={feature.image} // Placeholder if no image is provided
                         alt={feature.title}
                         className="w-full h-56 object-cover rounded-lg mb-4"
-                      />
+                      /> */}
                     </div>
                   ))}
                 </div>

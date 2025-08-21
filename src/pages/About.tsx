@@ -1,7 +1,14 @@
-import { motion } from 'framer-motion';
-import myphoto from '../images/myphto.webp'
+import { motion } from "framer-motion";
+import { useState } from "react";
+import myphoto from "../images/myphto.webp";
 
 const About = () => {
+  const [showFull, setShowFull] = useState(false);
+
+  const toggleDescription = () => {
+    setShowFull(!showFull);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -9,7 +16,7 @@ const About = () => {
       className="max-w-4xl mx-auto mb-4"
     >
       <h1 className="page-title">About Me</h1>
-      
+
       <div className="grid md:grid-cols-2 gap-8">
         {/* Profile Image */}
         <motion.div
@@ -34,32 +41,75 @@ const About = () => {
           className="space-y-6"
         >
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-2">General Information</h2>
-            <div className="space-y-3">
-              <p><span className="font-semibold">Name:</span> Tasnimul Hoque Rafi</p>
-              <p><span className="font-semibold">Date of Birth:</span> 1st July, 1998</p>
-              <p><span className="font-semibold">Location:</span> 607/B, Silver Zakir Palace, 2A, East Talpukurpar, Comilla</p>
-              <p><span className="font-semibold">Nationality:</span> Italian</p>
-              <p><span className="font-semibold">Email:</span> hoquerafi727@gmail.com</p>
-            </div>
+            <h2 className="text-2xl font-bold text-gray-800 mb-2">
+              General Information
+            </h2>
+            <ul className="space-y-3 text-gray-700">
+              <li>
+                <strong>Name:</strong> Md. Parvej Hoque Palash
+              </li>
+              <li>
+                <strong>Date of Birth:</strong> 22nd March, 2001
+              </li>
+              <li>
+                <strong>Location:</strong> 180/1, Jambari, Elashpur, Cumilla-3500
+              </li>
+              <li>
+                <strong>Nationality:</strong> Bangladeshi
+              </li>
+              <li>
+                <strong>Email:</strong>{" "}
+                mdparvejhoquepalash.official@gmail.com
+              </li>
+            </ul>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-2">About Me</h2>
-            <p className="text-gray-600 leading-relaxed">
-                  I am a prospective Post-Graduate student completing B.Sc in Electrical and Electronics Engineering (EEE) from the Bangladesh University of Engineering and Technology (BUET) with major in Communication & Signal Processing. I have expertise in Robotics & Automation, Computer Vision, UAV & Wireless Communication Systems having completed plenty of relavent projects. My academic thesis focused on Autonomous Traffic Monitoring & Driver Assistance Based on Computer Vision that includes the following modules:
-                  1. Detection & Classification of Traffic Signs
-                  2. Detection & Classification of Vehicles
-                  3. Recognition of Vehicle's Registration Plate
-                  4. Speed Estimation of Vehicles
-                  5. Virtual Zone Based Vehicles Counting Including Wrong Side Promt
-                  6. Virtual Zone Based Collision Avoidance Altert.
-                  7. Drawsiness & Yawn Detection of Driver
+            <div className="text-gray-600 space-y-4 leading-relaxed">
+              <p>
+                I am a postgraduate in <strong>Computer Science and Engineering (CSE)</strong>, having completed both my <strong>B.Sc.</strong> and <strong>M.Sc.</strong> from <strong>Jahangirnagar University (JU)</strong>.
+              </p>
 
-                  Currently, my thesis work in progress to be submitted in an International Conference.
+              <p>
+                Currently, I work as a <strong>Software Engineer at Divine IT Limited</strong>, where I specialize in building robust full-stack applications using technologies like <strong>Django, Next.js, Node.js, React, MongoDB, MySQL</strong>, and <strong>PostgreSQL</strong>.
+              </p>
 
-                  I look forward to contributing to the Robotics & Automation and Wiresless Communication Industry having the expertise I gathered ever since my undergrad period.
-            </p>
+              {showFull && (
+                <>
+                  <p>
+                    My key contributions include working on <strong>prismERP</strong> – a comprehensive enterprise resource planning platform tailored for diverse business needs.
+                  </p>
+
+                  <p>
+                    I’m also actively pursuing entrepreneurship through two impactful startup projects:
+                  </p>
+                  <ul className="list-disc list-inside ml-4">
+                    <li>
+                      <strong>🔬 Genomedics:</strong> A dynamic, responsive website for a prominent medicine supplier in Bangladesh.
+                    </li>
+                    <li>
+                      <strong>🏫 Albab Academy:</strong> A full-featured school automation platform with online admissions, automated payments, and detailed academic reporting.
+                    </li>
+                  </ul>
+
+                  <p>
+                    With a strong background in <strong>backend architecture</strong>, <strong>front-end development</strong>, and <strong>database management</strong>, I’m passionate about building scalable, efficient, and user-centric solutions.
+                  </p>
+
+                  <p>
+                    I strive to create systems that are not only technically sound but also intuitive and enjoyable to use. I bring <strong>creativity</strong>, <strong>attention to detail</strong>, and a <strong>user-first mindset</strong> to every project—always aiming to deliver meaningful and high-impact results.
+                  </p>
+                </>
+              )}
+
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:underline font-medium"
+              >
+                {showFull ? "See less..." : "See more..."}
+              </button>
+            </div>
           </div>
         </motion.div>
       </div>

@@ -11,7 +11,7 @@ import ResearchInterest from './pages/ResearchInterest';
 import Education from './pages/Education';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import Internship from './pages/Internship';
+import Experience from './pages/Experience';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -38,7 +38,7 @@ function App() {
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/research" element={<Research />} />
-            <Route path="/internship" element={<Internship />} />
+            <Route path="/experience" element={<Experience />} />
             <Route path="/research_interest" element={<ResearchInterest />} />
             <Route path="/education" element={<Education />} />
             <Route path="/contact" element={<Contact />} />
@@ -48,7 +48,7 @@ function App() {
           {/* Footer */}
           <footer className="fixed bottom-0 w-full mx-auto mt-auto py-2 flex items-center text-center text-sm text-gray-600 bg-gradient-to-r from-purple-50 to-blue-50">
             <div className="flex justify-center items-center h-full">
-              Copyright © 2025 Tasnimul Hoque Rafi. All rights reserved.
+              Copyright © 2025 Md. Parvej Hoque Palash. All rights reserved.
             </div>
           </footer>
         </main>

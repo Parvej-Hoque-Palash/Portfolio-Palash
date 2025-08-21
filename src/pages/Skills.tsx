@@ -1,36 +1,35 @@
 import { motion } from 'framer-motion';
-import { Cpu, Code2, FileText, Globe, Layout } from 'lucide-react';
+import { Code2, Server, Database, Wrench, Globe } from 'lucide-react';
 
 const skillCategories = [
   {
-    title: 'Microcontrollers',
-    icon: Cpu,
-    skills: ['Arduino', 'ESP', 'STM', 'FPGA', 'Raspberry Pi'],
-    color: 'bg-blue-500'
-  },
-  {
     title: 'Programming Languages',
     icon: Code2,
-    skills: ['Python', 'C/C++', 'VHDL', 'Matlab'],
-    color: 'bg-green-500'
+    skills: ['C', 'C++', 'JavaScript', 'Python', 'SQL', 'HTML', 'CSS'],
+    color: 'bg-blue-600'
   },
   {
-    title: 'Simulation',
-    icon: Layout,
-    skills: ['PSpice', 'PSAF', 'AutoCAD', 'Matlab/Simulink', 'Quartus', 'Keil', 'Proteus', 'SITL', 'ROS'],
-    color: 'bg-purple-500'
+    title: 'Frameworks & Databases',
+    icon: Server,
+    skills: [
+      'Bootstrap', 'Tailwind CSS', 'React', 'Node.js', 'Express.js', 'Next.js', 'Django',
+      'MySQL', 'PostgreSQL', 'MongoDB'
+    ],
+    color: 'bg-green-600'
   },
   {
-    title: 'Document Preparation',
-    icon: FileText,
-    skills: ['Overleaf (LaTeX)', 'Microsoft Word/PowerPoint/Excel'],
-    color: 'bg-yellow-500'
+    title: 'Technologies & Tools',
+    icon: Wrench,
+    skills: [
+      'GitHub', 'Figma', 'Postman', 'PgAdmin4', 'Eclipse', 'Netlify', 'Cloudflare', 'Vercel', 'Surge'
+    ],
+    color: 'bg-purple-600'
   },
   {
     title: 'Languages',
     icon: Globe,
-    skills: ['English (Professional Fluency)', 'French (Early B1)', 'Italian (A2)', 'Bengali (Native)'],
-    color: 'bg-red-500'
+    skills: ['English (Fluent)', 'Bengali (Native)'],
+    color: 'bg-red-600'
   }
 ];
 
@@ -52,10 +51,14 @@ const Skills = () => {
             transition={{ delay: index * 0.1 }}
             className="bg-white rounded-xl shadow-lg p-6"
           >
-            <div className={`${category.color} w-12 h-12 rounded-lg flex items-center justify-center text-white mb-4`}>
+            <div
+              className={`${category.color} w-12 h-12 rounded-lg flex items-center justify-center text-white mb-4`}
+            >
               <category.icon size={24} />
             </div>
-            <h2 className="text-xl font-bold text-gray-800 mb-4">{category.title}</h2>
+            <h2 className="text-xl font-bold text-gray-800 mb-4">
+              {category.title}
+            </h2>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill) => (
                 <span

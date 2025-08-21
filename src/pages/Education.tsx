@@ -2,24 +2,24 @@ import { motion } from 'framer-motion';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 const education = [
-  // {
-  //   degree: 'Master of Science in Computer Science',
-  //   institution: 'Bangladesh University of Engineering and Technology',
-  //   location: 'Dhaka, Bangladesh',
-  //   period: '2019 - 2024',
-  //   description: 'Major in Communication & Signal Processing',
-  //   achievements: [
-  //     'Published 2 research papers',
-  //     'Graduated with distinction',
-  //     'Teaching Assistant for Data Structures course'
-  //   ]
-  // },
   {
-    degree: 'Bachelor of Science in Electrical and Electronic Engineering',
-    institution: 'Bangladesh University of Engineering and Technology',
+    degree: 'Master of Science in Computer Science and Engineering',
+    institution: 'Jahangirnagar University',
+    location: 'Dhaka, Bangladesh',
+    period: '2024 - 2025',
+    description: '',
+    achievements: [
+      // 'Published 2 research papers',
+      // 'Graduated with distinction',
+      // 'Teaching Assistant for Data Structures course'
+    ]
+  },
+  {
+    degree: 'Bachelor of Science in Computer Science and Engineering',
+    institution: 'Jahangirnagar University',
     location: 'Dhaka, Bangladesh',
     period: '2019 - 2024',
-    description: 'Major in Communication & Signal Processing',
+    description: '',
     achievements: [
       // 'First Class Honours',
       // 'President of Computer Science Society',

@@ -9,19 +9,19 @@ const Contact = () => {
     {
       icon: Phone,
       label: 'Phone',
-      value: '+8801988448287',
-      href: 'tel:+8801988448287'
+      value: '+8801841763871',
+      href: 'tel:+8801841763871'
     },
     {
       icon: Mail,
       label: 'Email',
-      value: 'hoquerafi727@gmail.com',
-      href: 'mailto:hoquerafi727@gmail.com'
+      value: 'mdparvejhoquepalash.official@gmail.com',
+      href: 'mailto:mdparvejhoquepalash.official@gmail.com'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Italy',
+      value: 'Bangladesh',
       href: '#'
     }
   ];
@@ -30,17 +30,17 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/Rafi0198?tab=repositories'
+      href: 'https://github.com/Parvej-Hoque-Palash'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/tasnimul-hoque-rafi/'
+      href: 'https://www.linkedin.com/in/parvej-hoque-palash/'
     },
     {
       icon: Youtube,
       label: 'YouTube',
-      href: 'https://www.youtube.com/@rafihoque7431'
+      href: 'https://www.youtube.com/@parvejhoquepalash3842'
     }
   ];
 

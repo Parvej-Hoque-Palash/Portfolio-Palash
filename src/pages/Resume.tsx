@@ -4,7 +4,7 @@ import { Viewer, SpecialZoomLevel, RenderError } from "@react-pdf-viewer/core";
 import { Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { useState } from "react";
-import resumeFile from '../pdf/Resume_Rafi.pdf';
+import resumeFile from '../pdf/Palash_Resume.pdf';
 
 
 const Resume = () => {
