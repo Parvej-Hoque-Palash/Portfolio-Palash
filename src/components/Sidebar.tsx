@@ -13,6 +13,7 @@ import {
   FileText,
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import VisitorCounter from './VisitorCounter';
 
 interface SidebarProps {
   isOpen: boolean;
@@ -141,6 +142,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             ))}
           </motion.div>
         </nav>
+        <VisitorCounter />
       </div>
     </motion.aside>
   );
