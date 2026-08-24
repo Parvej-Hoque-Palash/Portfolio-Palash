@@ -51,6 +51,22 @@ const researchWorks = [
         }
       ],
     },
+    {
+      title: 'Cyber Bullying Detection on Social Media Platform using NLP',
+      author: 'Md. Parvej Hoque Palash',
+      supervisor: '',
+      supervisorProfile: '',
+      youtubeLink: '',
+      kaggleLink: '',
+      githubLink: '',
+      paperLink: '',
+      features: [
+        {
+          title: 'Detection & Classification of Cyber Bullying',
+          // image: feature1,
+        }
+      ],
+    },
 ];
 
 // Stagger container for feature cards

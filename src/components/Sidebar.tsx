@@ -93,7 +93,7 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
             transition={{ delay: 0.2 }}
             className="text-purple-600 font-medium"
           >
-            Software Engineer | Data & AI
+            Data & AI Researcher
           </motion.p>
         </motion.div>
 

@@ -2,25 +2,25 @@ import { motion } from 'framer-motion';
 import myphoto from '../images/myphto.webp'
 
 import {
-  Code2,
-  Network,
-  Server,
-  BrainCircuit,
-  BrainCog,
-  Database,
-  BarChart3,
-  PieChart
+  BrainCircuit, 
+  BrainCog, 
+  Stethoscope, 
+  Database, 
+  Network, 
+  BarChart3, 
+  PieChart, 
+  Cpu
 } from 'lucide-react';
 
 const characteristics = [
+  { icon: Stethoscope, title: "Health Care AI", color: "bg-teal-600" },
+  { icon: Cpu, title: "Artificial Intelligence", color: "bg-purple-600" },
+  { icon: BrainCircuit, title: "Machine Learning", color: "bg-indigo-500" },
+  { icon: BrainCog, title: "Deep Learning", color: "bg-pink-500" },
   { icon: Database, title: "Data Engineering", color: "bg-sky-600" },
-  { icon: BarChart3, title: "Data Analytics", color: "bg-emerald-600" },
-  { icon: Code2, title: 'Web Development', color: 'bg-blue-500' },
-  { icon: Network, title: 'System Design', color: 'bg-green-500' },
-  { icon: Server, title: 'Backend Development', color: 'bg-red-500' },
-  { icon: BrainCircuit, title: 'Machine Learning', color: 'bg-indigo-500' },
-  { icon: BrainCog, title: 'Deep Learning', color: 'bg-pink-500' },
-  { icon: PieChart, title: 'Business Intelligence', color: 'bg-orange-500' },
+  { icon: BarChart3, title: "Data Science", color: "bg-blue-600" },
+  { icon: Network, title: "System Design", color: "bg-green-500" },
+  { icon: PieChart, title: "Business Intelligence", color: "bg-orange-500" },
 ];
 
 const headingWords = ["Welcome", "to", "My", "Portfolio"];

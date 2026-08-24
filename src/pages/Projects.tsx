@@ -12,7 +12,7 @@ const projects = [
   {
     name: 'Albab Academy',
     description: 'A comprehensive school automation system featuring online admissions, payment automation, and detailed report generation.',
-    link: 'https://albab-academy.vercel.app/',
+    link: 'https://albab-academy.com/',
     github: 'https://github.com/albaba-academy/albaba-academy'
   },
   {
